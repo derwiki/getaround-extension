@@ -1,0 +1,24 @@
+{
+  "name": "GetAround Buddy",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "GetAround Buddy",
+  "homepage_url": "https://github.com/derwiki/getaround-extension/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.getaround.com/cars"
+      ],
+      "js": [
+        "src/inject/inject.js",
+        "src/inject/jquery-3.1.1.slim.min.js"
+      ]
+    }
+  ]
+}
